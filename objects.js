@@ -4,3 +4,7 @@ function updatePlaylist(playlist, artist, title){
   playlist[artist]= title;
   return playlist;
 }
+function removeFromPlaylist(playlist, artist){
+  playlist.assign({},playlist{artist});
+  return playlist;
+}
